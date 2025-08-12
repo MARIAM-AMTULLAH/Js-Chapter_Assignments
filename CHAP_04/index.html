@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading"></h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    <script>
+        // QUESTION 01 
+       var variable1,variable2,variable3;
+
+       // QUESTION 02       
+        //    5 legal variable names 
+        var myName;
+        var std_age;
+        var $rupees;
+        var variable3;
+        var Full_Name;
+
+        //    5 illegal variable names 
+            // var class;
+
+            
+        // QUESTION 03 
+        var number = 23;
+        var symbol = "$";
+        var underscore="_";
+        document.getElementById('heading').innerHTML="Rules for naming JS variables"; 
+        document.getElementById('p1').innerHTML=" Variable names can only contain "+typeof(number)+","+symbol+" and "+underscore+". For example $my_1stVariable";
+        document.getElementById('p2').innerHTML="Variables must begin with a letter, "+symbol+" or "+underscore+".  For example $name, _name or name";
+        document.getElementById('p3').innerHTML=" Variable names are case sensitive.";
+        document.getElementById('p4').innerHTML="Variable names should not be JS keywords.";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // QUESTION 01 
+        var city = prompt("Enter City Name: ");
+        var cityName=city.toLowerCase();
+        if(cityName==="karachi"){
+            alert("Welcome to City Of Light");
+        }
+        else if(cityName==="lahore"){
+            alert("Welcome to Capital Of Punjab");
+        }
+        else if(cityName==="multan"){
+            alert("Welcome to City Of Saints");
+        }
+        else if(cityName==="islamabad"){
+            alert("Welcome to Capital Of Pakistan");
+        }
+        else if(cityName==="peshawar"){
+            alert("Welcome to 3argest City Of Pakistan");
+        }
+        else if(cityName==="quetta"){
+            alert("Welcome to Fruit Garden of Pakistan");
+        }
+        else if(cityName==="faisalabad"){
+            alert("Welcome to Faisalabad");
+        }
+        else {
+            alert("OOPs! This city is not in the list right now.");
+        }
+
+
+        // QUESTION 02 
+        var gender = prompt("Enter Your Gender: ");
+        var userGender = gender.toLowerCase();
+
+        if(userGender==="male"){
+            alert("Good Morning Sir")
+        }
+        else if(userGender==="female"){
+            alert("Good Morning Mam");
+        }
+        else{
+            alert("Please enter your correct gender")
+        }
+
+
+        // QUESTION 03 
+        var signal = prompt("Enter Signal Color: ");
+        var signalColor = signal.toLowerCase();
+
+        if(signalColor==="red"){
+            alert("Must Stop!");
+        }
+        else if(signalColor==="yellow"){
+            alert("Ready to move!");
+        }
+        else if(signalColor==="green"){
+            alert("Move Now!");
+        }
+        else{
+            alert("Enter Correct Signal Color");
+        }
+
+
+        // QUESTION 04 
+        var fuel = parseFloat(prompt("Enter Remaining Fuel of your vehicle: "))
+        
+        if(fuel<=0.25){
+            alert("Please refill the fuel in your vehicle");
+        }
+        else {
+            alert("Your vehicle fuel is fill");
+        }
+
+
+        // QUESTION 05 
+
+        // PART A 
+        var a = 4; 
+        if (++a === 5){ 
+            document.write("<br>given condition for variable a is true"); 
+        } 
+
+
+        // PART B 
+        var b = 82; 
+        if (b++ === 83){ 
+            document.write("<br>given condition for variable b is true"); 
+        } 
+
+        // PART C
+        var c = 12; 
+        if (c++ === 13){
+            document.write("<br>condition 1 is true"); 
+        } 
+        if (c === 13){ 
+            document.write("<br>condition 2 is true"); 
+        } 
+        if (++c < 14){ 
+            document.write("<br>condition 3 is true"); 
+        } 
+        if(c === 14){ 
+            document.write("<br>condition 4 is true"); 
+        } 
+
+        // PART D
+        var materialCost = 20000; 
+        var laborCost = 2000; 
+        var totalCost = materialCost + laborCost; 
+        if (totalCost === laborCost + materialCost){ 
+            document.write("<br><br>The cost equals"); 
+        } 
+
+        // PART E
+        if (true){ 
+            document.write("<br>True"); 
+        } 
+        if (false){ 
+            document.write("<br>False"); 
+        } 
+
+        // PART F
+        if("car" < "cat"){ 
+            document.write("<br>car is smaller than cat"); 
+        } 
+
+
+
+        // QUESTION 06 
+
+        var obtainedMarks = +prompt("Enter Your Obtained Marks in 3 Subjects: ");
+        var totalMarks = +prompt("Enter your total marks in 3 Subjects ");
+
+        var percentage, grade, remarks;
+        if(obtainedMarks<=totalMarks){
+            percentage=(obtainedMarks/totalMarks)*100;
+            if(percentage<=100 && percentage>=80){
+                grade = "A-one";
+                remarks = "Excellent"
+            }
+            else if(percentage<80 && percentage>=70){
+                grade = "A";
+                remarks = "Good"
+            }
+            else if(percentage<70 && percentage>=60){
+                grade = "B";
+                remarks = "You need to improve"
+            }
+            else {
+                grade = "Fail";
+                remarks = "Sorry"
+            }
+            document.write("<br><br>Marks Sheet  <br>Total Marks: "+totalMarks+"<br>Marks Obtained: "+obtainedMarks+"<br>Percentage: "+percentage+"<br>Grade: "+grade+"<br>Remarks: "+remarks);
+
+
+        }
+        else{
+            alert("Incorrect Total Marks Or Obtained Marks!")
+        }
+
+
+        // QUESTION 07 
+         
+        var guessNumber = +prompt("Enter the Number to guess Secret Number: ");
+        var number = Math.floor(Math.random()*10)+1;
+
+        document.write("<br><br>GUESS NUMBER GAME!");
+
+        if(number===guessNumber){
+            document.write("<br>Bingo! Correct answer");
+        }else if(number===(guessNumber+1)){
+            document.write("<br>“Close enough to the correct answer");
+        }else{
+            document.write("<br>Incorrect! You failed");
+        }
+
+
+        // QUESTION 08 
+        var number = +prompt("Enter any number to check whether it is divisible by 3 or not: ")
+
+        if(number%3==0){
+            document.write("<br><br>The given number is divible by 3")
+        }
+        else{
+            document.write("<br><br>The given number is not divible by 3")
+        }
+
+
+        // QUESTION 09 
+            document.write("<br><br>EVEN / ODD CHECKER");
+            var evenORodd = +prompt("Enter any number: ")
+
+            if(evenORodd%2==0){
+                document.write("<br>The given number is EVEN");
+            }
+            else{
+                document.write("<br>The given number is ODD");
+            }
+
+
+            // QUEStION 10 
+            document.write("<br><br>TEMPERATURE CHECKER");
+            var temp = +prompt("Enter your area temperature: ");
+
+            if(temp > 40){
+                document.write("<br>It is too hot outside.")
+            } else if(temp<=40 && temp>30){
+                document.write("<br>The Weather today is Normal.")
+            }else if(temp<=30 && temp>20){
+                document.write("<br>Today’s Weather is cool.")
+            }else if(temp<=20 && temp>10){
+                document.write("<br>OMG! Today’s weather is so Cool.")
+            }
+            else{
+                document.write("<br>OMG! Today’s weather is too Cool.")
+            }
+
+            
+            // QUEStION 11
+            document.write("<br><br>OPERATION PERFORMER");
+            var number1 =+prompt("Enter first number: ");
+            var number2 = +prompt("Enter second number: ");
+            var operation = prompt("Which operation you want to perform ? <br> + , - , * , / , % ");
+            var result;
+
+            if(operation==="+"){
+                result=number1+number2;
+
+            }else if(operation==="-"){
+                result=number1-number2;
+                
+            }else if(operation==="*"){
+                result=number1*number2;
+                
+            }else if(operation==="/"){
+                result=number1/number2;
+                
+            }else if(operation==="%"){
+                result=number1%number2;
+                
+            }else {
+                document.write("<br>Please select right operation!")
+            }
+
+            document.write("<br> Result is: "+result);
+
+
+        
+
+
+
+    </script>
+
+</body>
+</html>

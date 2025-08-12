@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td id="sub1_name"></td>
+            <td id="sub1_totMarks"></td>
+            <td id="sub1_obtMarks"></td>
+            <td id="sub1_percentage"></td>
+        </tr>
+        <tr>
+            <td id="sub2_name"></td>
+            <td id="sub2_totMarks"></td>
+            <td id="sub2_obtMarks"></td>
+            <td id="sub2_percentage"></td>
+        </tr>
+        <tr>
+            <td id="sub3_name"></td>
+            <td id="sub3_totMarks"></td>
+            <td id="sub3_obtMarks"></td>
+            <td id="sub3_percentage"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="Total_Marks" class="total"></td>
+            <td id="Total_ObtainedMarks" class="total"></td>
+            <td id="Total_Percentage" class="total"></td>
+        </tr>
+    </table>
+    <div id="para"></div>
+
+    <script>
+
+        // Question 01 
+        var a=10;
+        document.getElementById('para').innerHTML="Result: <br><br>The value of a is "+ a;
+        document.write(".................................");
+        document.write("<br>The value of ++a is "+ ++a +"<br>Now the value of a is"+a );
+
+        document.write("<br>The value of a++ is "+ a++ +"<br>Now the value of a is"+a);
+        
+        document.write("<br>The value of --a is "+ --a +"<br>Now the value of a is"+a);
+
+        document.write("<br>The value of a-- is "+ a-- +"<br>Now the value of a is"+a);
+
+        // Question 02
+        var a = 2, b = 1; 
+        document.writeln("<br>a is: "+a);
+        document.writeln("<br>b is: "+b);
+        var result = --a - --b + ++b + b--;
+        document.write("<br>result is: "+result);
+
+        // Question 03
+        var userName=prompt("Enter your Name:")
+        alert("Hi "+userName+"!");
+
+        // Question 04 
+        var table= +prompt("Enter any number to print its table: ");
+        if(table===0){
+            for(var i=1; i<=10;i++){
+                document.write("<br>5x"+i+"="+(5*i));
+            }
+        }else{
+            for(var i=1; i<=10;i++){
+                document.write("<br>"+table+"x"+i+"="+(table*i));
+            }
+        }
+
+        // Question 05
+        var subject1=prompt("Enter your name of Subject1: ");
+        var subject2=prompt("Enter your name of Subject2: ");
+        var subject3=prompt("Enter your name of Subject3: ");
+        var tot_Marksof_sub1=100;
+        var tot_Marksof_sub2=100;
+        var tot_Marksof_sub3=100;
+        var sub1_Marks=+prompt("Enter your marks of Subject1: ");
+        var sub2_Marks=+prompt("Enter your marks of Subject2: ");
+        var sub3_Marks=+prompt("Enter your marks of Subject3: ");
+        var Sub1_Percentage=sub1_Marks/tot_Marksof_sub1*100;
+        var Sub2_Percentage=sub2_Marks/tot_Marksof_sub2*100;
+        var Sub3_Percentage=sub3_Marks/tot_Marksof_sub3*100;
+
+        var Total_Marks=tot_Marksof_sub1+tot_Marksof_sub2+tot_Marksof_sub3;
+        var Total_ObtainedMarks= sub1_Marks+sub2_Marks+sub3_Marks;
+        var Total_Percentage=Sub1_Percentage+Sub2_Percentage+Sub3_Percentage;
+
+        document.getElementById('sub1_name').innerHTML=subject1;
+        document.getElementById('sub2_name').innerHTML=subject2;
+        document.getElementById('sub3_name').innerHTML=subject3;
+
+        document.getElementById('sub1_totMarks').innerHTML=tot_Marksof_sub1;
+        document.getElementById('sub2_totMarks').innerHTML=tot_Marksof_sub2;
+        document.getElementById('sub3_totMarks').innerHTML=tot_Marksof_sub3;
+
+        document.getElementById('sub1_obtMarks').innerHTML=sub1_Marks;
+        document.getElementById('sub2_obtMarks').innerHTML=sub2_Marks;
+        document.getElementById('sub3_obtMarks').innerHTML=sub3_Marks;
+        
+        document.getElementById('sub1_percentage').innerHTML=Sub1_Percentage+"%";
+        document.getElementById('sub2_percentage').innerHTML=Sub2_Percentage+"%";
+        document.getElementById('sub3_percentage').innerHTML=Sub3_Percentage+"%";
+
+        document.getElementById('Total_Marks').innerHTML=Total_Marks;
+        document.getElementById('Total_ObtainedMarks').innerHTML=Total_ObtainedMarks;
+        document.getElementById('Total_Percentage').innerHTML=Total_Percentage+"%";
+        
+    </script>
+</body>
+</html>

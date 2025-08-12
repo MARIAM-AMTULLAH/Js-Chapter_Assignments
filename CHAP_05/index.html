@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <p id="para4"></p>
+    <p id="para5"></p>
+    <p id="para6"></p>
+    <p id="para7"></p>
+    <p id="para8"></p>
+    <div id="ticket"></div>
+    <div id="table"></div>
+    <div id="tempF"></div>
+    <div id="tempC"></div>
+
+    <script>
+
+        // QUESTION 01
+        var num1=+prompt("Enter any number: ");
+        var num2=+prompt("Enter another number: ");
+        var sum = num1+num2;
+        document.getElementById("para1").innerHTML="Sum of "+num1+"and "+num2+" is "+sum;
+
+        // QUESTION 02
+        var diff = num1-num2;
+        var multiply = num1*num2;
+        var division = num1/num2;
+        var mod = num1%num2;
+        document.getElementById("para2").innerHTML="Difference of "+num1+"and "+num2+" is "+diff+"<br>Multiple of "+num1+"and "+num2+" is "+multiply+"<br>Division of "+num1+"and "+num2+" is "+division+"<br>Modulus of "+num1+"and "+num2+" is "+mod;
+
+        // QUESTION 03
+        var number;
+        document.getElementById("para3").innerHTML="Value after declaration is "+number;
+        number = 1;
+        document.getElementById("para4").innerHTML="Initial value: "+number;
+        number++;
+        document.getElementById("para5").innerHTML="Value after increment is : "+number;
+        number+=7;
+        document.getElementById("para6").innerHTML="Value after addition is: "+number;
+        number--;
+        document.getElementById("para7").innerHTML="Value after decrement is : "+number;
+        number=number%3;
+        document.getElementById("para8").innerHTML="The remainder is : "+number;
+
+        // QUESTION 04
+        var noOfTickets=prompt("How many tickets you want to buy?\n\nEach ticket cost is 600 PKR.");
+        var price=600*noOfTickets;
+        document.getElementById("ticket").innerHTML="<br>Total cost to buy "+noOfTickets+" tickets to a movie is "+price+" PKR.";
+
+        // QUESTION 05
+        var table=prompt("Enter any number to print its table: ");
+        var table_Length=prompt("Enter the length of the table: ")
+        var tableResult="";
+        for(var i=1;i<=table_Length;i++){
+            tableResult+=table+"x"+i+"="+(table*i)+"\n";
+        }
+        document.getElementById("table").innerHTML="<br>TABLE OF "+table+"<br>"+tableResult;
+
+        // QUESTION 06    Temperature Converter
+
+        var tempInCelsius=prompt("Enter the temperature in Celsius: ");
+        var tempConverterInFarenheit=(tempInCelsius*9/5)+32;
+        document.getElementById("tempF").innerHTML="<br>"+tempInCelsius+"C is "+tempConverterInFarenheit+"F";
+
+        var tempInFarenheit =prompt("Enter the temperature in Fahrenheit: ");
+        var tempConverterInCelsius=(tempInFarenheit-32)*5/9;
+        document.getElementById("tempC").innerHTML=tempInFarenheit+"F is "+tempConverterInCelsius+"C"
+
+        // QUESTION 07
+
+
+
+    </script>
+</body>
+</html>

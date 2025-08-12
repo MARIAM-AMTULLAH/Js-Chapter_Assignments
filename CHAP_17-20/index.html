@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>CHAPTER 17 - ASSIGNMENT QUESTIONS</h1>
+
+    <script>
+
+        // QUESTION 01 
+        var emptyArray = [
+            [],[],[]
+        ]
+
+
+        // QUESTION 02
+        var matrix = [
+            [0,1,2,3],
+            [1,0,1,2],
+            [2,1,0,1]
+        ];
+        for(var i=0;i<matrix.length;i++){
+            for(var j=0;j<1;j++){
+                document.write(matrix[i]+" ");
+            }
+            document.write("<br>");
+        }
+
+
+        // QUESTION  03
+        document.write("<br>");
+        for(
+            var i=1;i<=10;i++){
+                document.write("<br>"+i);
+        }
+
+
+        // QUESTION 04
+        document.write("<br>");
+        var num = parseInt(prompt("Enter a number to show it's multiplication table"));
+        var len=parseInt(prompt("Enter its length"));
+
+        for(var i=1;i<=len;i++){
+
+            document.write("<br>"+num+"x"+i+"="+num*i);
+        }
+
+
+        
+        // QUESTION 05
+        document.write("<br>");
+        var array = ["Apple","Mango","Banana","Orange","Strawberry"];
+        for(var i=0;i<array.length;i++){
+            document.write("<br>"+array[i]);
+        }
+
+        document.write("<br>");
+        for(var i=0;i<array.length;i++){
+            document.write("<br>Element at "+i+" index is "+array[i]);
+        }
+
+
+        // QUESTION 06
+        document.write("<br><br>Counting: ");
+         for(
+            var i=1;i<=15;i++){
+                document.write(i+",");
+        }
+
+        document.write("<br>Reverse Counting: ");
+         for(
+            var i=10;i>=1;i--){
+                document.write(i+",");
+        }  
+        
+        document.write("<br>Even: ");
+         for(
+            var i=0;i<=20;i++){
+                if(i%2==0){
+                    document.write(i+",");
+                }
+                
+        }
+
+         document.write("<br>Odd: ");
+         for(
+            var i=0;i<=20;i++){
+                if(i%2!=0){
+                    document.write(i+",");
+                }
+                
+        }
+
+        document.write("<br>Series: ");
+         for(
+            var i=1;i<=20;i++){
+                if(i%2==0){
+                    document.write(i+"k,");
+                }
+                
+        }
+
+        
+        // QUESTION 07 
+        var A=["cake","apple pie","cookie","chips","patties"];
+        var userSearch = prompt("Welcome to ABC bakery. What do you want to order?");
+        var search = A.includes(userSearch);
+        if(search === true){
+            document.write("<br><br>"+userSearch+" is available in our bakery");
+        }
+        else{
+            document.write("<br><br>This Item is not avaliable!!")
+        }
+
+
+        // QUESTION 08
+        var B=[24,53,78,91,12];
+        document.write("<br><br>Array items: ");
+        for(var i=0;i<B.length;i++){
+            document.write(B[i]+",")
+        }
+        var sortArray = B.sort();
+        document.write("<br>The largest Number is "+B[B.length-1])
+
+
+        // QUESTION 09 
+        document.write("<br><br>Array items: ");
+        for(var i=0;i<B.length;i++){
+            document.write(B[i]+",")
+        }
+        document.write("<br>The Smallest Number is "+B[0]);
+
+
+        // QUESTION 10 
+         document.write("<br><br>");
+         for(var i=1;i<=100;i++){
+            if(i%5==0){
+                document.write(i+",");
+            }
+            
+         }
+
+        
+    </script>
+</body>
+</html>

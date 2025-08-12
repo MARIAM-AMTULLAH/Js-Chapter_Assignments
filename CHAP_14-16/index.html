@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        <select name="PhoneManufacturer" id="phoneManufacturers">
+            <option value="" id="manufacture0"></option>
+            <option value="" id="manufacture0"></option>
+            <option value="" id="manufacture0"></option>
+            <option value="" id="manufacture0"></option>
+            <option value="" id="manufacture0"></option>
+            <option value="" id="manufacture0"></option>
+            <option value="" id="manufacture0"></option>
+        </select>
+    
+
+
+    <script>
+
+        // QUESTION 01 
+        var studentNames = [];
+
+        // QUESTION 02 
+        var array = new Array();
+
+        // QUESTION 03 
+        var stringArray = ["Mariam", "Asma", "Ahmed", "Fatima"];
+
+        // QUESTION 04 
+        var numberArray = [1,2,3,4,5];
+
+        // QUESTION 05 
+        var booleanArray = [true, false];
+
+        // QUESTION 06 
+        var mixedArray = ["Mariam",18,"Female",5.5,true];
+
+        // QUESTION 07
+        var qualification = ["SSC","HSC","BS","BCOM","MS","M.Phil","PhD"] ;
+
+        document.write("Qualifications: ");
+        for(var i=0;i<qualification.length;i++){
+            document.write("<br>"+(i+1)+") "+qualification[i]);
+        }
+
+        // QUESTION 08 
+        var studentScores =[];
+        var totalMark = 500;
+        var percentages =[];
+
+        for(var i=0;i<3;i++){
+            studentNames[i]= prompt("Enter Student Name: ");
+            studentScores[i]= prompt("Enter Student Score:  /500 ");
+            percentages[i] = (studentScores[i]/totalMark)*100;
+        }
+
+        for(var i=0;i<3;i++){
+            document.write("<br>Score of "+studentNames[i]+" is "+studentScores[i]+". Percentage: "+percentages[i]+"%");  
+        }
+        
+        
+        // QUESTION 09 
+        
+        // QUESTION 10 
+        // QUESTION 11 
+        // QUESTION 12 
+        // QUESTION 13 
+        // QUESTION 14
+
+
+
+        // QUESTION 15
+        var phoneManufacturers = ["Apple","Samsung","Motorola","Nokia","Sony","haier"];
+
+
+
+        
+        
+
+
+    </script>
+</body>
+</html>

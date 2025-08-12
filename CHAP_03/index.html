@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="para"></p>
+
+
+
+    <script>
+
+        // QUESTION 01
+        var myAge=19;
+        alert("I am "+myAge+" years old");
+
+        // QUESTION 02
+
+        // getting current visit time from local Storage
+        var trackPage = localStorage.getItem("trackPage");
+               
+        if (trackPage === null) {
+        trackPage = 1;
+        } else {
+        trackPage = parseInt(trackPage) + 1;
+        }
+
+        // Save the updated count back to localStorage
+        localStorage.setItem("trackPage", trackPage);
+
+        alert("You have visited this site "+trackPage+" times");
+
+        // QUESTION 03
+        var birthYear = 2005;
+        document.getElementById("p1").innerHTML="My Birth Year is "+birthYear;
+        document.getElementById("p2").innerHTML="Data type of my declared variable is "+typeof(birthYear);
+
+        // QUESTION 04
+        var visitorName= prompt("Enter Your Name: ");
+        var productTitle = prompt("Enter Product Title: ");
+        var quantity = prompt("How many products you want to order: ");
+        document.getElementById("para").innerHTML=visitorName+" ordered "+quantity+" "+productTitle+" on XYZ Store";
+
+        
+    </script>
+</body>
+</html>
