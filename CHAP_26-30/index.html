@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    
+
+
+    <script>
+
+        // QUESTION 01
+        let positiveNum = prompt("Enter Positive number: ");
+        console.log("Number: "+positiveNum+"\nRound off value of the number: " +Math.round(positiveNum)+"\nFloor Value: "+Math.floor(positiveNum)+"\nCeil Value: "+Math.ceil(positiveNum));
+
+
+        // QUESTION 02
+        let negNumber = prompt("Enter Any Negative number: ");
+        console.log("Number: "+negNumber+"\nRound off value of the number: " +Math.round(negNumber)+"\nFloor Value: "+Math.floor(negNumber)+"\nCeil Value: "+Math.ceil(negNumber))
+
+        
+        // QUESTION 03
+        let absNumber = prompt("Enter any number: ");
+        console.log("The Absolute value of "+absNumber+" is: "+Math.abs(absNumber));
+
+
+        // QUESTION 04
+        // Generate a random number between 1 and 6
+        let diceValue = Math.floor(Math.random() * 6) + 1;
+        document.write("<br>Random Dice Value: " + diceValue);
+
+
+
+        // QUESTION 05    test this code
+        let coinValue = Math.floor(Math.random() * 10) % 2; 
+        let userguess = +prompt("Enter 1 for Heads and 0 for Tails"); 
+
+        if (userguess === coinValue) {
+            document.write("<br>You WON!");
+        } else {
+            document.write("<br>You LOSE!");
+        }
+
+        if (coinValue === 1) {
+            document.write("<br>Random Coin Value: Heads");
+        } else {
+            document.write("<br>Random Coin Value: Tails");
+        }
+
+
+
+        // QUESTION 06
+        let randomNumber = Math.floor(Math.random()*100)+1;
+        console.log("Random Number between 1 and 100 is : "+randomNumber);
+
+
+        // QUESTION 07
+        let weight = parseFloat(prompt("Enter your weight in kg: "));
+        console.log("The weight of user is "+weight+" kilograms");
+
+
+        // QUESTION 08
+        let userinput = prompt("Enter a number between 1 and 10: ");
+        let secretNumber = Math.random()*10;
+
+        if(userinput===secretNumber){
+            document.write("<br><br>Congrats! You won");
+        }
+        else{
+            document.write("<br><br>Sorry! You lose");
+        }
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
